@@ -4,6 +4,10 @@
 
 This project focuses on demonstrating the deployment of containers in Amazon EKS (Elastic Kubernetes Service). For this demonstration, a PySpark application has been containerized and deployed using Amazon EKS.
 
+## Architecture
+
+![Poc-jupyterMoney drawio](https://github.com/Raghav670/Deployment-of-Containers-in-Amazon-EKS/assets/74827764/831042c1-ceca-4112-b52c-823acb379617)
+
 ## Objectives
 
 - Demonstrate the deployment process of containers in Amazon EKS.
