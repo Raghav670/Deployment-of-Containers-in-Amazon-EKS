@@ -1,0 +1,21 @@
+FROM python:3.8-slim
+
+
+ENV JAVA_HOME=/usr/lib/jvm/default-java
+ENV PATH=$JAVA_HOME/bin:$PATH
+
+RUN apt-get update && \
+    apt-get install -y default-jdk && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install pyspark
+
+ENV PYSPARK_PYTHON=python3
+
+EXPOSE 8080
+
+CMD ["python", "t1.py", "t2.py"]
