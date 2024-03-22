@@ -6,7 +6,7 @@ This project focuses on demonstrating the deployment of containers in Amazon EKS
 
 ## Architecture
 
-![Poc-jupyterMoney drawio](https://github.com/Raghav670/Deployment-of-Containers-in-Amazon-EKS/assets/74827764/831042c1-ceca-4112-b52c-823acb379617)
+![Poc-jupyterMoney drawio-dark](https://github.com/Raghav670/Deployment-of-Containers-in-Amazon-EKS/assets/74827764/fcf48cce-e8b3-44bf-bdb4-ab78f35fac14)
 
 ## Objectives
 
