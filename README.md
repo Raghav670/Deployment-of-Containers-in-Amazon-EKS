@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on demonstrating the deployment of containers in Amazon EKS (Elastic Kubernetes Service). For the purpose of this demonstration, a PySpark application has been containerized and deployed using Amazon EKS.
+This project focuses on demonstrating the deployment of containers in Amazon EKS (Elastic Kubernetes Service). For this demonstration, a PySpark application has been containerized and deployed using Amazon EKS.
 
 ## Objectives
 
@@ -17,6 +17,7 @@ This project focuses on demonstrating the deployment of containers in Amazon EKS
 - AWS ECS (Elastic Container Service)
 - Kubernetes
 - Apache Airflow
+- Windows Subsystem for Linux (Ubuntu)
 
 ## Steps
 
@@ -35,7 +36,7 @@ This project focuses on demonstrating the deployment of containers in Amazon EKS
   - **Integration**: Deploying PySpark applications in Kubernetes (EKS) allows seamless integration with other cloud services and tools for monitoring, logging, and orchestration.
 - Dockerfile specifications:
   - Base image: `python:3.8-slim`.
-  - Set working directory to `/app`.
+  - Set the working directory to `/app`.
   - Copy files into the container.
   - Install PySpark.
   - Expose port 8080 (if needed).
@@ -73,9 +74,11 @@ This project focuses on demonstrating the deployment of containers in Amazon EKS
 
 ### Airflow
 
+Note: Working Airflow in Windows is confusing. So for Airflow, I have utilized WSL(Windows Subsystem for Linux- ubuntu )
+
 1. Install Apache Airflow using pip.
-3. Optionally, set up Airflow home directory.
-4. Initialize the database and create admin user.
+3. Optionally, set up the Airflow home directory.
+4. Initialize the database and create an admin user.
    ```bash
    airflow users create --username <username> --firstname <firstname> --lastname <lastname> --role <role> --email <email>
 
